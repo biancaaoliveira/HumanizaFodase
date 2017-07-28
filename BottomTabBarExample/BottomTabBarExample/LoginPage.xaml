@@ -9,11 +9,11 @@
 
                 <Label Text="Email" TextColor="Black" ></Label>
 
-                <Entry x:Name="Email" TextColor="Gray"></Entry>
+                <Entry x:Name="Email" TextColor="Gray" Text="teste@email.com"></Entry>
 
                 <Label Text="Senha" TextColor="Black" ></Label>
 
-                <Entry x:Name="Senha" IsPassword="True" TextColor="Gray" ></Entry>
+                <Entry x:Name="Senha" IsPassword="True" TextColor="Gray" Text="123"></Entry>
 
                 <Button Clicked="Button_Clicked" Text="login"  BackgroundColor="#d5b7ee"></Button>
 

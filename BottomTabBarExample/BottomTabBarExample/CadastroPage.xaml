@@ -24,7 +24,6 @@
 
                         <Button Clicked="cadastro_clicked" Text="Cadastrar"  BackgroundColor="#d5b7ee"></Button>
 
-
                     </StackLayout>
                 </Grid>
             </StackLayout>
