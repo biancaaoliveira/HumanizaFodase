@@ -18,6 +18,12 @@ namespace BottomTabBarExample
             InitializeComponent();
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
+
         private async void Button_Clicked(object sender, EventArgs e)
         {
             if (Email.Text == "teste@email.com" && Senha.Text == "123")

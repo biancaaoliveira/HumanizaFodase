@@ -8,7 +8,22 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Lista profissionais" />
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Doulas" Clicked="Doulas_Clicked"></Button>
+                <Button Text="Profissionais" Clicked="Profissionais_Clicked"></Button>
+            </StackLayout>
+            <ListView x:Name="lvUsuarios">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="Nome"></Label>
+                                <Label Text="Telefone"></Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
