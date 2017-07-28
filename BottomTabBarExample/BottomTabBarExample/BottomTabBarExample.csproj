@@ -41,6 +41,14 @@
     <Compile Include="CadastroPage.xaml.cs">
       <DependentUpon>CadastroPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Classes\CustomPins.cs" />
+    <Compile Include="Classes\Doulas.cs" />
+    <Compile Include="Classes\Gravidas.cs" />
+    <Compile Include="Classes\Locais.cs" />
+    <Compile Include="Classes\Medicos.cs" />
+    <Compile Include="Classes\Noticias.cs" />
+    <Compile Include="Classes\Parteiras.cs" />
+    <Compile Include="Classes\Usuarios.cs" />
     <Compile Include="ConvidarPage.xaml.cs">
       <DependentUpon>ConvidarPage.xaml</DependentUpon>
     </Compile>
