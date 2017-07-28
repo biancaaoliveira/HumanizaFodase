@@ -12,7 +12,7 @@ namespace BottomTabBarExample
     {
         public MainPage()
         {
-
+           
             Title = "HUMANIZA";
 
             Children.Add(new NewsPage());

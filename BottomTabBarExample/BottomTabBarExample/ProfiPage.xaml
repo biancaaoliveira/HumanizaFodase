@@ -8,9 +8,9 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Button Text="Doulas" Clicked="Doulas_Clicked"></Button>
-                <Button Text="Profissionais" Clicked="Profissionais_Clicked"></Button>
+            <StackLayout Orientation="Horizontal" >
+                <Button Text="Doulas" Clicked="Doulas_Clicked"  BackgroundColor="#d5b7ee" ></Button>
+                <Button Text="Profissionais" Clicked="Profissionais_Clicked"  BackgroundColor="#d5b7ee"></Button>
             </StackLayout>
             <ListView x:Name="lvUsuarios">
                 <ListView.ItemTemplate>
