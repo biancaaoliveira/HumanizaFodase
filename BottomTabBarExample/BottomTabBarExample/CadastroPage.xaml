@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BottomTabBarExample.CadastroPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+            <StackLayout Margin="20" VerticalOptions="Center">
+
+                <Label Text="Email" TextColor="#9900ff" ></Label>
+
+                <Entry x:Name="Email"></Entry>
+
+                <Label Text="Senha (min. 6 caracteres)" TextColor="#9900ff" ></Label>
+
+                <Entry x:Name="Senha"></Entry>
+
+                 <Label Text="Confirme sua senha" TextColor="#9900ff" ></Label>
+
+                <Entry x:Name="Senhaconfirma" ></Entry>
+
+                 <Button Clicked="cadastro_clicked" Text="Cadastrar"  BackgroundColor="#9900ff"></Button>
+
+
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

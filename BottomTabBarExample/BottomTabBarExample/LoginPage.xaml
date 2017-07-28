@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BottomTabBarExample.LoginPage">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout Margin="20" VerticalOptions="Center">
+                <Image HeightRequest="200" Source="icon.png"></Image>
+
+                <Label Text="Email" TextColor="#9900ff" ></Label>
+
+                <Entry x:Name="Email"></Entry>
+
+                <Label Text="Senha" TextColor="#9900ff" ></Label>
+
+                <Entry x:Name="Senha" IsPassword="True" ></Entry>
+
+                <Button Clicked="Button_Clicked" Text="login"  BackgroundColor="#9900ff"></Button>
+                
+                <Button Clicked="cadastrar_clicked" Text="Cadastrar"  BackgroundColor="#9900ff"></Button>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+    

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BottomTabBarExample.PerfilPage">
+        
+    <ContentPage.Content>
+        <StackLayout Margin="20" VerticalOptions="Center">
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Image Source="Icon.png"></Image>
+                <StackLayout HorizontalOptions="FillAndExpand">
+                    <Label Text="Nome" TextColor="Black"></Label>
+                    <Label Text="Usuario teste da silva" TextColor="Red"></Label>
+                    <Label TextColor="Black">Email:</Label>
+                    <Label Text="teste@email.com" TextColor="Red"></Label>
+                    
+                   
+                </StackLayout>
+            </StackLayout>
+            <StackLayout>
+                <Button Text="Sobre o App" BackgroundColor="Pink" HorizontalOptions="Center" WidthRequest="120"></Button>
+                <Button Text="Termos de Uso e Privacidade " BackgroundColor="Pink" ></Button>
+               
+                <Button Clicked ="sair_clicked" Text="Sair" BackgroundColor="Pink"></Button>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
