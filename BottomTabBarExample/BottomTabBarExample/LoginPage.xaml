@@ -5,19 +5,19 @@
     <ContentPage.Content>
         <Grid>
             <StackLayout Margin="20" VerticalOptions="Center">
-                <Image HeightRequest="200" Source="icon.png"></Image>
+                <Image HeightRequest="200" Source="gestante.png"></Image>
 
-                <Label Text="Email" TextColor="#9900ff" ></Label>
+                <Label Text="Email" TextColor="Black" ></Label>
 
-                <Entry x:Name="Email"></Entry>
+                <Entry x:Name="Email" TextColor="Gray"></Entry>
 
-                <Label Text="Senha" TextColor="#9900ff" ></Label>
+                <Label Text="Senha" TextColor="Black" ></Label>
 
-                <Entry x:Name="Senha" IsPassword="True" ></Entry>
+                <Entry x:Name="Senha" IsPassword="True" TextColor="Gray" ></Entry>
 
-                <Button Clicked="Button_Clicked" Text="login"  BackgroundColor="#9900ff"></Button>
-                
-                <Button Clicked="cadastrar_clicked" Text="Cadastrar"  BackgroundColor="#9900ff"></Button>
+                <Button Clicked="Button_Clicked" Text="login"  BackgroundColor="#d5b7ee"></Button>
+
+                <Button Clicked="cadastrar_clicked" Text="Cadastrar"  BackgroundColor="#d5b7ee"></Button>
             </StackLayout>
         </Grid>
     </ContentPage.Content>

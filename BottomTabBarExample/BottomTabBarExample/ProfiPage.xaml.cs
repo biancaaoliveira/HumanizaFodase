@@ -16,5 +16,15 @@ namespace BottomTabBarExample
         {
             InitializeComponent();
         }
+
+        private void Doulas_Clicked(object sender, EventArgs e)
+        {
+            lvUsuarios.ItemsSource = new List<string> { "Um", "Dois" };
+        }
+
+        private void Profissionais_Clicked(object sender, EventArgs e)
+        {
+            lvUsuarios.ItemsSource = new List<int> { 1, 2, 4, 5 };
+        }
     }
 }
