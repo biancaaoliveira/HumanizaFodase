@@ -15,6 +15,13 @@ namespace BottomTabBarExample
         public PlanoPage()
         {
             InitializeComponent();
+
+            //var navigationPage = new NavigationPage(new Plano1());
+            //navigationPage.Icon = "schedule.png";
+            //navigationPage.Title = "Schedule";
+
+            //Children.Add(new TodayPageCS());
+            //Children.Add(navigationPage);\\\\
         }
     }
 }
