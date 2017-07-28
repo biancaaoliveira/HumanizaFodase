@@ -1,12 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             Title="Plano"
-              Icon="denuncie2.png"
-             x:Class="BottomTabBarExample.PlanoPage">
+             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             Icon="denuncie2.png"
+             x:Class="BottomTabBarExample.PlanoPage" BackgroundColor="ecdffd">
     <ContentPage.Content>
+
+
         <StackLayout>
-            <Label Text="Faça seu plano de parto" />
+            <Label Text=" Trabalho de Parto"/>
+            <controls:CheckBox DefaultText="opção 1"
+                           FontName="AmericanTypewriter"
+                           FontSize="25"
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Green" />
+            <controls:CheckBox CheckedText="Checked"
+                           DefaultText="Default text"
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Blue"
+                           UncheckedText="Unchecked" />
+            <controls:CheckBox DefaultText="This is a very long string. A very long string. A really very long string."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Blue" />
+            <controls:CheckBox DefaultText="Normal length text again."
+                           FontSize="25"
+                           HorizontalOptions="FillAndExpand">
+                <controls:CheckBox.TextColor>
+                    <OnPlatform x:TypeArguments="Color"
+                            Android="Black"
+                            WinPhone="White"
+                            iOS="Black" />
+                </controls:CheckBox.TextColor>
+            </controls:CheckBox>
+            |
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
