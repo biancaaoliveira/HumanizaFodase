@@ -20,9 +20,10 @@
 
                         <Label Text="Confirme sua senha" TextColor="Black" ></Label>
 
-                        <Entry x:Name="Senhaconfirma" TextColor="Gray"></Entry>
+                      <Entry x:Name="Senhaconfirma" TextColor="Gray"></Entry>
 
-                        <Button Clicked="cadastro_clicked" Text="Cadastrar"  BackgroundColor="#d5b7ee"></Button>
+
+                    <Button Clicked="cadastro_clicked" Text="Cadastrar"  BackgroundColor="#d5b7ee"></Button>
 
                     </StackLayout>
                 </Grid>

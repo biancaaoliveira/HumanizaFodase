@@ -13,29 +13,36 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button Grid.Column="0" Text="Doulas" Clicked="Doulas_Clicked"  BackgroundColor="#d5b7ee" ></Button>
-                <Button Grid.Column="1" Text="Profissionais" Clicked="Profissionais_Clicked"  BackgroundColor="#d5b7ee"></Button>
+                <Button Grid.Column="0" Text="Doulas" TextColor="Gray" Clicked="Doulas_Clicked"  BackgroundColor="#d5b7ee" ></Button>
+                <Button Grid.Column="1" Text="Profissionais" TextColor="Gray" Clicked="Profissionais_Clicked"  BackgroundColor="#d5b7ee"></Button>
             </Grid>
             <StackLayout Margin="8">
-                <ListView x:Name="lvProfissionais" IsVisible="False">
+                <ListView x:Name="lvProfissionais" IsVisible="False" HasUnevenRows="True">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
                                 <StackLayout>
-                                    <Label Text="Moraes"></Label>
-                                    <Label Text="Telefone"></Label>
+                                    <Label Text="{Binding nome}"></Label>
+                                    <Label Text="{Binding email}"></Label>
+                                    <Label Text="{Binding curso}"></Label>
+                                    <Label Text="{Binding telefone}"></Label>
+                                    <Label Text="{Binding status}"></Label>
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-                <ListView x:Name="lvDoulas" IsVisible="True">
+                <ListView x:Name="lvDoulas" IsVisible="True" HasUnevenRows="True">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
                                 <StackLayout>
-                                    <Label Text="Teste"></Label>
-                                    <Label Text="Telefone"></Label>
+                                    <Label Text="{Binding nome}"></Label>
+                                    <Label Text="{Binding email}"></Label>
+                                    
+                                    <Label Text="{Binding telefone}"></Label>
+                                   
+
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>

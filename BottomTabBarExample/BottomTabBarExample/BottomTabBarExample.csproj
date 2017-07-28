@@ -65,14 +65,8 @@
     <Compile Include="NewsPage.xaml.cs">
       <DependentUpon>NewsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="perfildoula.xaml.cs">
-      <DependentUpon>perfildoula.xaml</DependentUpon>
-    </Compile>
     <Compile Include="PerfilPage.xaml.cs">
       <DependentUpon>PerfilPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="perfilusuario.xaml.cs">
-      <DependentUpon>perfilusuario.xaml</DependentUpon>
     </Compile>
     <Compile Include="PlanoPage.xaml.cs">
       <DependentUpon>PlanoPage.xaml</DependentUpon>
@@ -159,16 +153,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ConvidarPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="perfildoula.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="perfilusuario.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

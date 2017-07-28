@@ -14,6 +14,7 @@ namespace BottomTabBarExample.Classes
             get { return Nome; }
             set { Nome = value; }
         }
+      
 
         protected string Email;
         public string email

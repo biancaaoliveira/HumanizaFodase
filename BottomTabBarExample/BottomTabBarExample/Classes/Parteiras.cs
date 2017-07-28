@@ -15,6 +15,12 @@ namespace BottomTabBarExample.Classes
             set { CursoUni = value; }
         }
 
+        protected string Telefone;
+        public string telefone
+        {
+            get { return telefone; }
+            set { telefone = value; }
+        }
         public void Adicionar(string nome, string email, string senha, string cursouni, List<Parteiras> lc)
         {
 

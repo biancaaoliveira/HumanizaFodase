@@ -5,9 +5,9 @@
         
     <ContentPage.Content>
         <StackLayout Margin="20" VerticalOptions="Center">
-
+            <Image HeightRequest="200" Source="gestante.png"></Image>
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                <Image Source="Icon.png"></Image>
+               
                 <StackLayout HorizontalOptions="FillAndExpand">
                     <Label Text="Nome" TextColor="Black"></Label>
                     <Label Text="Usuario teste da silva" TextColor="Red"></Label>
@@ -16,12 +16,13 @@
                     
                    
                 </StackLayout>
+                
             </StackLayout>
             <StackLayout>
-                <Button Text="Sobre o App" BackgroundColor="Pink" HorizontalOptions="Center" WidthRequest="120"></Button>
-                <Button Text="Termos de Uso e Privacidade " BackgroundColor="Pink" ></Button>
-               
-                <Button Clicked ="sair_clicked" Text="Sair" BackgroundColor="Pink"></Button>
+                <Button Text="Sobre o App" BackgroundColor="#d5b7ee" HorizontalOptions="Center" WidthRequest="120"></Button>
+                <Button Text="Termos de Uso e Privacidade " BackgroundColor="#d5b7ee" ></Button>
+
+                <Button Clicked ="sair_clicked" Text="Sair" BackgroundColor="#d5b7ee"></Button>
             </StackLayout>
 
         </StackLayout>

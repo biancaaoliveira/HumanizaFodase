@@ -8,13 +8,21 @@
  
             
             <StackLayout HorizontalOptions="FillAndExpand" Margin="10">
-                <Label Text="Convide alguém para nossa rede" TextColor="Black"></Label>
+                <Label Text="Convide uma mãe para nossa rede" TextColor="Black"></Label>
                
                 <Label TextColor="Black">Email:</Label>
                 <Entry x:Name="Email" TextColor="Gray"></Entry>
 
-                <Button Text="Convindar" BackgroundColor="#d5b7ee"></Button>
-                
+                <Button Text="Convidar" BackgroundColor="#d5b7ee"></Button>
+
+                <Label Text="Ou indique um profissional para nossa rede:" TextColor="Black"></Label>
+                <Entry x:Name="indicardoula" TextColor="Gray"></Entry>
+
+                <!--<Button Text="Indicar" BackgroundColor="#d5b7ee"></Button>-->
+
+
+
+
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

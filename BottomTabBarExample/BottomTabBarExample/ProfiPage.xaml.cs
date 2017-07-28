@@ -37,16 +37,25 @@ namespace BottomTabBarExample
         {
             List<Doulas> doulas = new List<Doulas>();
             //doulas.Add(new Doulas() { nome = "", email = "", cursos = { "", "", "" }, senha = "", status = "" });
-            doulas.Add(new Doulas() { nome = "Gabriel", email = "gabriel@mail.com", senha = "123", status = "Ativo" });
+            doulas.Add(new Doulas() { nome = "Ana Katz", email = "anakatzschuler@gmail.com", cursos = "Doula pelo GAMA", telefone= "(81) 9964-8212" });
+            doulas.Add(new Doulas() { nome = "", email = "gabriel@mail.com", status = "Ativo" });
+            doulas.Add(new Doulas() { nome = "Gabriel", email = "gabriel@mail.com",status = "Ativo" });
+            doulas.Add(new Doulas() { nome = "Gabriel", email = "gabriel@mail.com",  status = "Ativo" });
+            doulas.Add(new Doulas() { nome = "Gabriel", email = "gabriel@mail.com", status = "Ativo" });
+            doulas.Add(new Doulas() { nome = "Gabriel", email = "gabriel@mail.com", status = "Ativo" });
+            doulas.Add(new Doulas() { nome = "Gabriel", email = "gabriel@mail.com",  status = "Ativo" });
+            doulas.Add(new Doulas() { nome = "Gabriel", email = "gabriel@mail.com", status = "Ativo" });
 
             lvDoulas.ItemsSource = doulas;
         }
 
         public void PopulateProfissionais()
         {
-            List<Doulas> profissionais = new List<Doulas>();
+            List<Medicos> profissionais = new List<Medicos>();
+            profissionais.Add(new Medicos() { nome = "Gabriel", email = "gabriel@gmail.com", status = "Loucão", telefone ="81 98785648" });
+            lvProfissionais.ItemsSource = profissionais;
 
-            lvProfissionais.ItemsSource = new List<int> { 1, 2, 4, 5 };
+
         }
     }
 }

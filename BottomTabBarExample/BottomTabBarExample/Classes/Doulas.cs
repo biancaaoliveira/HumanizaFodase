@@ -8,14 +8,20 @@ namespace BottomTabBarExample.Classes
 {
     class Doulas : Usuarios
     {
-        private List<string> Cursos;
-        public List<string> cursos
+        private string Cursos;
+        public string cursos
         {
             get { return Cursos; }
             set { Cursos = value; }
         }
+        protected string Telefone;
+        public string telefone
+        {
+            get { return Telefone; }
+            set { Telefone = value; }
+        }
 
-        public void Adicionar(string nome, string email, string senha, List<string> curso, List<Doulas>lc)
+        public void Adicionar(string nome, string email, string curso, List<Doulas>lc, string telefone)
         {
 
             var d = new Doulas()
@@ -23,13 +29,10 @@ namespace BottomTabBarExample.Classes
                 Nome = nome,
                 Email = email,
                 Status = "Doula",
-                Senha = senha,
+               Telefone = telefone,
+                Cursos = curso
             };
-            Cursos = new List<string>();
-            foreach(string s in curso)
-            {
-                Cursos.Add(s);
-            }
+            
             lc.Add(d);
         }
 

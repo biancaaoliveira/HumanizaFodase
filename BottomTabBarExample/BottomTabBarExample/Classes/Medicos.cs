@@ -14,8 +14,14 @@ namespace BottomTabBarExample.Classes
             get { return CMR; }
             set { CMR = value; }
         }
+        protected string Telefone;
+        public string telefone
+        {
+            get { return Telefone; }
+            set { Telefone = value; }
+        }
 
-        public void Adicionar(string nome, string email, string senha, string cmr, List<Medicos> lc) 
+        public void Adicionar(string nome, string email, string senha, string cmr, List<Medicos> lc, string telefone) 
         {
 
             var m = new Medicos()
@@ -24,6 +30,7 @@ namespace BottomTabBarExample.Classes
                 Email = email,
                 Status = "Médico",
                 Senha = senha,
+                Telefone = telefone,
                 CMR = cmr
             };
             lc.Add(m);
