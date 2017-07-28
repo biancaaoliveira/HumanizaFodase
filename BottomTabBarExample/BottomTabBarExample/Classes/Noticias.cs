@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace BottomTabBarExample.Classes
 {
@@ -23,20 +24,20 @@ namespace BottomTabBarExample.Classes
             set { Descricao = value; }
         }
 
-        private string Imagem;
-        public string imagem
+        private ImageSource Imagem;
+        public ImageSource imagem
         {
             get { return Imagem; }
             set { Imagem = value; }
         }
 
-        public void Adicionar(string titulo, string descrição, string imagem, List<Noticias> lc)
+        public void Adicionar(string titulo, string descricao, string imagem, List<Noticias> lc)
         {
 
             var n = new Noticias()
             {
                 Titulo = titulo,
-                Descricao = descrição,
+                Descricao = descricao,
                 Imagem = imagem
             };
             lc.Add(n);
@@ -53,6 +54,13 @@ namespace BottomTabBarExample.Classes
                 }
             }
 
+        }
+
+        public void Noticia(string titulo, string descricao, string imagem)
+        {
+            Titulo = titulo;
+            Descricao = descricao;
+            Imagem = imagem;
         }
 
     }

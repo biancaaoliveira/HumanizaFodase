@@ -13,7 +13,7 @@ namespace BottomTabBarExample
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new DenunciaPage());
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()
