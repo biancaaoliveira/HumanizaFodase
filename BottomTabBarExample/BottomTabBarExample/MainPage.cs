@@ -31,13 +31,13 @@ namespace BottomTabBarExample
 
             
             ToolbarItem tb1 = new ToolbarItem();
-            tb1.Icon = "ic_account_circle_black_24dp.png";
+            tb1.Icon = "avatar_adicione3.png";
             tb1.Clicked += Convidar_Clicked;
             tb1.Priority = 0;
             
 
             ToolbarItem tb2 = new ToolbarItem();
-            tb2.Icon = "denuncie2.png";
+            tb2.Icon = "meu_perfil3.png";
             tb2.Clicked += Perfil_Clicked;
             tb1.Priority = 1;
 
