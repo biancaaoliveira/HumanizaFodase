@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using BottomTabBarExample.Classes;
+
 
 namespace BottomTabBarExample
 {
@@ -15,13 +17,22 @@ namespace BottomTabBarExample
         public PlanoPage()
         {
             InitializeComponent();
-
-            //var navigationPage = new NavigationPage(new Plano1());
-            //navigationPage.Icon = "schedule.png";
-            //navigationPage.Title = "Schedule";
-
-            //Children.Add(new TodayPageCS());
-            //Children.Add(navigationPage);\\\\
+            PopulateNews();
+        }
+        public void PopulateNews()
+        {
+            List<Noticias> plano_de_parto = new List<Noticias>();
+            plano_de_parto.Add(new Noticias()
+            {
+                titulo = "Plano de Parto",
+                descricao = "O plano de Parto é uma carta ou uma lista onde a gestante descreve tudo que gostaria ou não gostaria que acontecesse nas etapas do parto, desde o trabalho de parto até os cuidados com o bebê após o nascimento. Atentamos que é importante um diálogo prévio com a equipe que irá realizar o seu parto acerca das suas preferências. Aqui você pode fazer o seu plano de parto e enviar por email para quem desejar.",
+                imagem = ImageSource.FromFile("plano_de_parto.png")
+            });
+            lvPlano.ItemsSource = plano_de_parto;           
+        }
+        private async void Plano1_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Plano1());
         }
     }
 }

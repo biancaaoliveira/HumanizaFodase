@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using BottomTabBarExample.Classes;
+
 
 namespace BottomTabBarExample
 {
@@ -15,6 +17,7 @@ namespace BottomTabBarExample
 		public Plano1 ()
 		{
 			InitializeComponent ();
-		}
+           
+        }
 	}
 }

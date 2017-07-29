@@ -1,38 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+              Title="Plano de Parto"
              Icon="denuncie2.png"
-             x:Class="BottomTabBarExample.PlanoPage" BackgroundColor="ecdffd">
+             x:Class="BottomTabBarExample.PlanoPage" BackgroundColor="#ECDFFD">
     <ContentPage.Content>
+        <StackLayout Spacing="25" x:Name="layout">
+            <StackLayout Margin="3">
+            <ListView x:Name="lvPlano" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell IsEnabled="False">
+                            <StackLayout Orientation="Vertical" VerticalOptions="Center" Margin="0,5,0,10">
+                                <Label Text="{Binding titulo}" FontAttributes="Bold" Margin="10"></Label>
+                                <Image Source="{Binding imagem}" ></Image>
+                                <Label Text="{Binding descricao}" FontSize="12" XAlign="Center" Margin="10" TextColor="Gray"></Label>
 
-
-        <StackLayout>
-            <Label Text=" Trabalho de Parto"/>
-            <controls:CheckBox DefaultText="opção 1"
-                           FontName="AmericanTypewriter"
-                           FontSize="25"
-                           HorizontalOptions="FillAndExpand"
-                           TextColor="Green" />
-            <controls:CheckBox CheckedText="Checked"
-                           DefaultText="Default text"
-                           HorizontalOptions="FillAndExpand"
-                           TextColor="Blue"
-                           UncheckedText="Unchecked" />
-            <controls:CheckBox DefaultText="This is a very long string. A very long string. A really very long string."
-                           HorizontalOptions="FillAndExpand"
-                           TextColor="Blue" />
-            <controls:CheckBox DefaultText="Normal length text again."
-                           FontSize="25"
-                           HorizontalOptions="FillAndExpand">
-                <controls:CheckBox.TextColor>
-                    <OnPlatform x:TypeArguments="Color"
-                            Android="Black"
-                            WinPhone="White"
-                            iOS="Black" />
-                </controls:CheckBox.TextColor>
-            </controls:CheckBox>
-            |
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        
+   
+            <Button Grid.Column="0" Text="Faça seu Plano de Parto" Clicked="Plano1_Clicked"  BackgroundColor="#d5b7ee" ></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

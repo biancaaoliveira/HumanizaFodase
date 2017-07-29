@@ -1,10 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BottomTabBarExample.Plano1">
+             x:Class="BottomTabBarExample.Plano1" BackgroundColor="#ECDFFD">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin Forms!" />
-        </StackLayout>
+
+        <StackLayout  Orientation="Vertical" VerticalOptions="Center" Margin="0,3,0,3">
+            <Label Text="Trabalho de Parto" FontAttributes="Bold" Margin="10"></Label>
+            <Image HeightRequest="200" Source="gestante.png"></Image>
+            </StackLayout>
+      
     </ContentPage.Content>
 </ContentPage>
