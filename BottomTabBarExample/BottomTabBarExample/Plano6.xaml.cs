@@ -11,7 +11,9 @@ namespace BottomTabBarExample
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Plano6 : ContentPage
     {
+        string texto_inicial = "Estou ciente de que o parto pode tomar diferentes rumos. Abaixo estão minhas preferências em relação ao parto e nascimento do meu filho(a), caso tudo transcorra bem. Sempre que os planos não puderem ser seguidos, gostaria de ser previamente avisada e consultada a respeito das alternativas.";
         List<TextosPlanoDeParto> textoplanoparto = new List<TextosPlanoDeParto>();
+
         public Plano6()
         {
             InitializeComponent();
@@ -36,6 +38,7 @@ namespace BottomTabBarExample
 
         public void PopulateTextos()
         {
+           
             textoplanoparto.Add(new TextosPlanoDeParto()
             {
                 titulo = "Trabalho de Parto",
@@ -68,7 +71,7 @@ namespace BottomTabBarExample
     
         public string ArrumarTextos()
         {
-            string TextoEmail = "SEU PLANO DE PARTO";
+            string TextoEmail = "SEU PLANO DE PARTO" + "\n" + "\n" + texto_inicial;
             foreach(TextosPlanoDeParto t in textoplanoparto)
             {
                 TextoEmail = TextoEmail + "\n" + "\n" + t.titulo + ":" +  "\n" + t.textos;
