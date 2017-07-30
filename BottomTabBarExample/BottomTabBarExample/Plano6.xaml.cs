@@ -68,10 +68,10 @@ namespace BottomTabBarExample
     
         public string ArrumarTextos()
         {
-            string TextoEmail = textoplanoparto[0].titulo + "\n" + textoplanoparto[0].textos;
-            for (int i = 1; i < textoplanoparto.Count; i++)
+            string TextoEmail = "SEU PLANO DE PARTO";
+            foreach(TextosPlanoDeParto t in textoplanoparto)
             {
-                TextoEmail = TextoEmail + "\n" + textoplanoparto[i].titulo + "\n" + textoplanoparto[i].textos;
+                TextoEmail = TextoEmail + "\n" + "\n" + t.titulo + ":" +  "\n" + t.textos;
             }
             return TextoEmail;
         }

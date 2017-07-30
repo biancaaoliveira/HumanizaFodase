@@ -19,7 +19,7 @@
             <controls:CheckBox x:Name="chk4" DefaultText="Desejo ingerir líquidos."
                            HorizontalOptions="FillAndExpand"
                            TextColor="Gray" />
-            <controls:CheckBox x:Name="chk5" DefaultText="Desejo caminhar e escolher a possição que eu quero ficar."
+            <controls:CheckBox x:Name="chk5" DefaultText="Desejo caminhar e escolher a posição que eu quero ficar."
                            HorizontalOptions="FillAndExpand"
                            TextColor="Gray" />
             <controls:CheckBox x:Name="chk6" DefaultText="Desejo ter acesso a um(a) banheira/pscina/chuveiro"
