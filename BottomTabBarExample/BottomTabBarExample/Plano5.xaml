@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             x:Class="BottomTabBarExample.Plano5"  BackgroundColor="#ECDFFD">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Caso de Cesárea" FontAttributes="Bold" FontSize="Large"></Label>
+            <controls:CheckBox  x:Name="chk1" DefaultText="Desejo o início do trabalho de parto antes de se resolver pela cesárea."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox  x:Name="chk2" DefaultText="Desejo a presença da doula e mais um acompanhante na sala de parto."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox  x:Name="chk3" DefaultText="Desejo anestesia peridural, sem sedação em momento algum."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox  x:Name="chk4" DefaultText="Desejo que o campo fosse abaixado para que eu possa ver o meu bebê no momento do nascimento."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox  x:Name="chk5" DefaultText="Desejo ser consultada sobre como o ambiente deve estar (luminosidade, música ambiente, etc)."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox  x:Name="chk6" DefaultText="Desejo que, logo após o nascimento, meu bebê seja colocado sobre meu peito e que minhas mãos estejam livres para segurá-lo."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox  x:Name="chk7" DefaultText="Desejo amamentar o meu bebê e ir para o alojamento conjunto o quanto antes."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+           
+            <Button Grid.Column="0" Text="Continuar" Clicked="Plano6_Clicked"  BackgroundColor="#d5b7ee" ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

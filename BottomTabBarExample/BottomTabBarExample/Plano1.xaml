@@ -1,13 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
              x:Class="BottomTabBarExample.Plano1" BackgroundColor="#ECDFFD">
     <ContentPage.Content>
 
-        <StackLayout  Orientation="Vertical" VerticalOptions="Center" Margin="0,3,0,3">
-            <Label Text="Trabalho de Parto" FontAttributes="Bold" Margin="10"></Label>
-            <Image HeightRequest="200" Source="gestante.png"></Image>
-            </StackLayout>
+        <StackLayout  Orientation="Vertical"  Margin="10,5,10,0">
+            <Label Text="Trabalho de Parto" FontAttributes="Bold" FontSize="Large"></Label>
+            <controls:CheckBox  x:Name="chk1" DefaultText="Desejo ter acompanhantes de minha escolha presentes."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox x:Name="chk2" DefaultText="Não desejo tricotomia(raspagem dos pelos pubianos) e enema(lavagem intestinal)."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox x:Name="chk3" DefaultText="Não desejo perfusão contínua de soro e ou ocitocina."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox x:Name="chk4" DefaultText="Desejo ingerir líquidos."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox x:Name="chk5" DefaultText="Desejo caminhar e escolher a possição que eu quero ficar."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox x:Name="chk6" DefaultText="Desejo ter acesso a um(a) banheira/pscina/chuveiro"
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox  x:Name="chk7" DefaultText="Desejo o monitoramento fetal apenas se for essencial e não contínuo."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox x:Name="chk8" DefaultText="Não desejo receber anestésicos ou analgésicos caso eu não solicite."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox x:Name="chk9" DefaultText="Não desejo o rompimento artificial da bolsa."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+
+            <Button  Grid.Column="0" Text="Continuar" Clicked="Plano2_Clicked"  BackgroundColor="#d5b7ee" ></Button>
+          
+        </StackLayout>
       
     </ContentPage.Content>
 </ContentPage>

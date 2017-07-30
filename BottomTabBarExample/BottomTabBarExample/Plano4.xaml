@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             x:Class="BottomTabBarExample.Plano4"  BackgroundColor="#ECDFFD">
+    <ContentPage.Content>
+        <StackLayout Margin="10,5,10,0">
+            <Label Text="Cuidados com o Bebê" FontAttributes="Bold" FontSize="Large"></Label>
+            <controls:CheckBox  x:Name="chk1" DefaultText="Não desejo que meu bebê, quando necessário, receba nitrato de prata ou antibióticos oftálmicos antes do contato comigo."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox  x:Name="chk2" DefaultText="Desejo que meu bebê receba vitamina K oral e me comprometo a dar continuidade nas doses."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox  x:Name="chk3" DefaultText="Desejo fazer a amamentação sob livre demanda."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox  x:Name="chk4" DefaultText="Não aceito que seja oferecido(a) àgua glicosada, bicos ou qualquer outra coisa ao meu bebê."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox  x:Name="chk5" DefaultText="Desejo alojamento conjunto o tempo todo. Caso eu esteja muito cansada ou necessite de ajuda eu solicitarei que ele seja levado para outro alojamento."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox  x:Name="chk6" DefaultText="Desejo dar banho no meu bebê e fazer as trocas (ou eu ou alguém que eu permita)."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            
+            <Button Grid.Column="0" Text="Continuar" Clicked="Plano5_Clicked"  BackgroundColor="#d5b7ee" ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

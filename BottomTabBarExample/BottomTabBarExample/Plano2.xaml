@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             x:Class="BottomTabBarExample.Plano2"  BackgroundColor="#ECDFFD">
+    <ContentPage.Content>
+        <StackLayout Margin="10,5,10,0">            
+            <Label Text="Durante o Parto" FontAttributes="Bold" FontSize="Large"></Label>
+            <controls:CheckBox x:Name="chk1" DefaultText="Desejo escolher a posição do parto (deitada, sentada, de cócoras, etc)."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox x:Name="chk2"  DefaultText="Desejo fazer força só durante as contrações, quando eu sentir vontade, em vez de ser guiada."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox x:Name="chk3"  DefaultText="Desejo um ambiente especialmente calmo nesta hora."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox x:Name="chk4"  DefaultText="Não aceito que minha barriga seja empurrada para baixo."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox x:Name="chk5"  DefaultText="Se a episiotomia (corte no períneo) for necessária eu gostaria de ser consultada sobre a realização ou não."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox x:Name="chk6" DefaultText="Desejo ser consultada sobre como o ambiente deve estar (luminosidade, música ambiente, etc)."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox x:Name="chk7" DefaultText="Desejo de escolher quem corta o cordão umbilical."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+            <controls:CheckBox x:Name="chk8" DefaultText="Desejo ter contato imediato com o bebê antes mesmo de cortarem o cordão umbilical."
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="Gray" />
+    
+            <Button Grid.Column="0" Text="Continuar" Clicked="Plano3_Clicked"  BackgroundColor="#d5b7ee" ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

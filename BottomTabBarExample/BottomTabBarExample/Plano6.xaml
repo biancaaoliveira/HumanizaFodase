@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            
+             x:Class="BottomTabBarExample.Plano6" BackgroundColor="#ECDFFD">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#ECDFFD" >
+           <Label Text="Seu Plano de Parto" FontAttributes="Bold"  FontSize="Large"  ></Label>
+              <Image x:Name="imgTeste"></Image>
+              <StackLayout Margin="0,50,0,0">
+                  <ListView x:Name="lvTextos" HasUnevenRows="True">
+                      <ListView.ItemTemplate>
+                          <DataTemplate>
+                              <ViewCell IsEnabled="False">
+                                  <StackLayout Orientation="Vertical" VerticalOptions="Center"  >
+                                      <Label Text="{Binding titulo}" FontAttributes="Bold"  Margin="10,5,5,5"></Label>
+
+                                      <Label Text="{Binding textos}" FontSize="12" Margin="10,5,5,5" TextColor="Gray"></Label>
+
+                                  </StackLayout>
+                              </ViewCell>
+                          </DataTemplate>
+                      </ListView.ItemTemplate>
+                  </ListView>
+                  <Button Grid.Column="0" Text="Enviar" Clicked="Enviar_Clicked"  BackgroundColor="#d5b7ee" ></Button>
+              </StackLayout>
+          </StackLayout>
+      </ContentPage.Content>
+</ContentPage>
