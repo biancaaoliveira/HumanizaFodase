@@ -24,7 +24,7 @@
             <controls:CheckBox x:Name="chk6" DefaultText="Desejo ser consultada sobre como o ambiente deve estar (luminosidade, música ambiente, etc)."
                            HorizontalOptions="FillAndExpand"
                            TextColor="Gray" />
-            <controls:CheckBox x:Name="chk7" DefaultText="Desejo de escolher quem corta o cordão umbilical."
+            <controls:CheckBox x:Name="chk7" DefaultText="Desejo escolher quem corta o cordão umbilical."
                            HorizontalOptions="FillAndExpand"
                            TextColor="Gray" />
             <controls:CheckBox x:Name="chk8" DefaultText="Desejo ter contato imediato com o bebê antes mesmo de cortarem o cordão umbilical."

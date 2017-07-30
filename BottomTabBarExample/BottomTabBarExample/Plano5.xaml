@@ -9,7 +9,7 @@
             <controls:CheckBox  x:Name="chk1" DefaultText="Desejo o início do trabalho de parto antes de se resolver pela cesárea."
                            HorizontalOptions="FillAndExpand"
                            TextColor="Gray" />
-            <controls:CheckBox  x:Name="chk2" DefaultText="Desejo a presença da doula e mais um acompanhante na sala de parto."
+            <controls:CheckBox  x:Name="chk2" DefaultText="Desejo a presença da doula e mais um acompanhante de minha escolha na sala de parto."
                            HorizontalOptions="FillAndExpand"
                            TextColor="Gray" />
             <controls:CheckBox  x:Name="chk3" DefaultText="Desejo anestesia peridural, sem sedação em momento algum."

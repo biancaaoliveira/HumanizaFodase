@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <StackLayout Margin="10,5,10,0">
             <Label Text="Após o Parto" FontAttributes="Bold" FontSize="Large"></Label>
-            <controls:CheckBox  x:Name="chk1" DefaultText="Desejo Aguardar a expulsão espontânea da placenta, sem manobras, tração ou massagens. Se possível ter auxílio da amamentação."
+            <controls:CheckBox  x:Name="chk1" DefaultText="Desejo aguardar a expulsão espontânea da placenta, sem manobras, tração ou massagens. Se possível ter auxílio da amamentação."
                            HorizontalOptions="FillAndExpand"
                            TextColor="Gray" />
             <controls:CheckBox  x:Name="chk2" DefaultText="Desejo ter o bebê comigo o tempo todo enquanto eu estiver na sala de parto, mesmo para exames e avaliação."
