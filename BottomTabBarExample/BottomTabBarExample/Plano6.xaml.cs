@@ -79,19 +79,17 @@ namespace BottomTabBarExample
             return TextoEmail;
         }
 
-        private void Enviar_Clicked(object sender, EventArgs e)
+        private async void Enviar_Clicked(object sender, EventArgs e)
         {
             var emailMessenger = CrossMessaging.Current.EmailMessenger;
             if (emailMessenger.CanSendEmail)
             {
                 emailMessenger.SendEmail("", "Plano de Parto", ArrumarTextos());
-
             }
             else
             {
                 DisplayAlert("Aviso", "Para enviar o Plano de Parto por email é necessário um aplicativo de email!", "fechar");
             }
-
         }
     }
 }

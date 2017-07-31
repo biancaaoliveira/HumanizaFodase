@@ -21,18 +21,25 @@ namespace BottomTabBarExample
         }
         private async void cadastro_clicked(object sender, EventArgs e)
         {
-            if (_senha.Text == Senhaconfirma.Text && _senha.Text.Length > 5)
+            if (!string.IsNullOrEmpty(_senha.Text) && !string.IsNullOrEmpty(Senhaconfirma.Text))
             {
-                Gravidas g = new Gravidas(_nome.Text, _email.Text, _senha.Text);
-                LoginPage.gravidas.Add(g);
-                LoginPage.UsuarioAtual = g;
-                Navigation.InsertPageBefore(new MainPage(), this);
-                await Navigation.PopAsync();
+                if (_senha.Text == Senhaconfirma.Text && _senha.Text.Length > 5)
+                {
+                    Gravidas g = new Gravidas(_nome.Text, _email.Text, _senha.Text);
+                    LoginPage.gravidas.Add(g);
+                    LoginPage.UsuarioAtual = g;
+                    Navigation.InsertPageBefore(new MainPage(), this);
+                    await Navigation.PopAsync();
+                }
+                else
+                {
+                    await DisplayAlert("Aviso", "Senhas diferentes ou pequenas", "fechar");
+
+                }
             }
             else
             {
-                await DisplayAlert("Aviso", "Senhas diferentes ou pequenas", "fechar");
-
+                await DisplayAlert("Aviso", "Preencha todos os campos!", "fechar");
             }
         }
     }

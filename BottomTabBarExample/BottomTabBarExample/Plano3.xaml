@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
-             x:Class="BottomTabBarExample.Plano3"  BackgroundColor="#ECDFFD">
+             x:Class="BottomTabBarExample.Plano3"  BackgroundColor="#ECDFFD" Title="Plano de Parto">
     <ContentPage.Content>
         <StackLayout Margin="10,5,10,0">
             <Label Text="Após o Parto" FontAttributes="Bold" FontSize="Large"></Label>

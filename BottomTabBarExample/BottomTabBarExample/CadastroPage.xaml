@@ -1,32 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BottomTabBarExample.CadastroPage" BackgroundColor="#ECDFFD">
-        <ContentPage.Content>
-            <StackLayout>
-                <Grid>
-                    <StackLayout Margin="20" VerticalOptions="Center">
+             x:Class="BottomTabBarExample.CadastroPage" BackgroundColor="#ECDFFD" Title="Cadastro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <StackLayout Margin="20" VerticalOptions="Center">
 
-                        <Label Text="Nome"  TextColor="Black"></Label>
-                        <Entry x:Name="_nome" TextColor="Gray"></Entry>
+                    <Label Text="Nome"  TextColor="Black"></Label>
+                    <Entry x:Name="_nome" TextColor="Gray"></Entry>
 
-                        <Label Text="Email" TextColor="Black" ></Label>
+                    <Label Text="Email" TextColor="Black" ></Label>
 
-                        <Entry x:Name="_email" TextColor="Gray"></Entry>
+                    <Entry x:Name="_email" TextColor="Gray"></Entry>
 
-                        <Label Text="Senha" TextColor="Black" ></Label>
+                    <Label Text="Senha" TextColor="Black" ></Label>
 
-                        <Entry x:Name="_senha" TextColor="Gray"></Entry>
+                    <Entry x:Name="_senha" IsPassword="True" TextColor="Gray"></Entry>
 
-                        <Label Text="Confirme sua senha" TextColor="Black" ></Label>
+                    <Label Text="Confirme sua senha" TextColor="Black" ></Label>
 
-                      <Entry x:Name="Senhaconfirma" TextColor="Gray"></Entry>
+                    <Entry x:Name="Senhaconfirma" IsPassword="True" TextColor="Gray"></Entry>
 
 
                     <Button Clicked="cadastro_clicked" Text="Cadastrar"  BackgroundColor="#d5b7ee"></Button>
 
-                    </StackLayout>
-                </Grid>
-            </StackLayout>
-        </ContentPage.Content>
-    </ContentPage>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

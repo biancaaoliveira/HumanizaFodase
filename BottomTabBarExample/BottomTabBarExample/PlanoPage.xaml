@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               Title="Plano de Parto"
-             Icon="denuncie2.png"
              x:Class="BottomTabBarExample.PlanoPage" BackgroundColor="#ECDFFD">
     <ContentPage.Content>
         <StackLayout  x:Name="layout" Margin="5,5,5,5">

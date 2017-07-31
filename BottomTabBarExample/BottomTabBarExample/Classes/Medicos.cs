@@ -21,7 +21,7 @@ namespace BottomTabBarExample.Classes
             set { Telefone = value; }
         }
 
-        public void Adicionar(string nome, string email, string senha, string cmr, List<Medicos> lc, string telefone) 
+        public void Adicionar(string nome, string email, string cmr, List<Medicos> lc, string telefone) 
         {
 
             var m = new Medicos()
@@ -29,7 +29,7 @@ namespace BottomTabBarExample.Classes
                 Nome = nome,
                 Email = email,
                 Status = "Médico",
-                Senha = senha,
+               
                 Telefone = telefone,
                 CMR = cmr
             };
