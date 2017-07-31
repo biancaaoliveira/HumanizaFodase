@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 
 namespace BottomTabBarExample.Classes
 {
-    class Gravidas : Usuarios
+    public class Gravidas : Usuarios
     {
+        public Gravidas()
+        {
+
+        }
+        public Gravidas(string n, string e, string s)
+        {
+            nome = n;
+            email = e;
+            senha = s;
+        }
         public void Adicionar(string nome, string email, string senha, List<Gravidas> lc)
         {
             var g = new Gravidas()

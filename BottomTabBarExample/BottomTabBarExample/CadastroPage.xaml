@@ -8,15 +8,15 @@
                     <StackLayout Margin="20" VerticalOptions="Center">
 
                         <Label Text="Nome"  TextColor="Black"></Label>
-                        <Entry x:Name="nome " TextColor="Gray"></Entry>
+                        <Entry x:Name="_nome" TextColor="Gray"></Entry>
 
                         <Label Text="Email" TextColor="Black" ></Label>
 
-                        <Entry x:Name="Email" TextColor="Gray"></Entry>
+                        <Entry x:Name="_email" TextColor="Gray"></Entry>
 
                         <Label Text="Senha" TextColor="Black" ></Label>
 
-                        <Entry x:Name="Senha" TextColor="Gray"></Entry>
+                        <Entry x:Name="_senha" TextColor="Gray"></Entry>
 
                         <Label Text="Confirme sua senha" TextColor="Black" ></Label>
 

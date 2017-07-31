@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BottomTabBarExample.Classes
 {
-    class TextosPlanoDeParto
+    public class TextosPlanoDeParto
     {
         private string Titulo;
         public string titulo

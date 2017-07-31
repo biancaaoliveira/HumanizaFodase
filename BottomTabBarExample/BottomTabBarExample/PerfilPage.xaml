@@ -10,17 +10,17 @@
                
                 <StackLayout HorizontalOptions="FillAndExpand">
                     <Label Text="Nome" TextColor="Black"></Label>
-                    <Label Text="Usuario teste da silva" TextColor="Red"></Label>
+                    <Label Text="{Binding  nome}" TextColor="Gray"></Label>
                     <Label TextColor="Black">Email:</Label>
-                    <Label Text="teste@email.com" TextColor="Red"></Label>
+                    <Label Text="{Binding email}" TextColor="Gray"></Label>
                     
                    
                 </StackLayout>
                 
             </StackLayout>
             <StackLayout>
-                <Button Text="Sobre o App" BackgroundColor="#d5b7ee" HorizontalOptions="Center" WidthRequest="120"></Button>
-                <Button Text="Termos de Uso e Privacidade " BackgroundColor="#d5b7ee" ></Button>
+                <!--<Button Text="Sobre o App" BackgroundColor="#d5b7ee" HorizontalOptions="Center" WidthRequest="120"></Button>
+                <Button Text="Termos de Uso e Privacidade " BackgroundColor="#d5b7ee" ></Button>-->
 
                 <Button Clicked ="sair_clicked" Text="Sair" BackgroundColor="#d5b7ee"></Button>
             </StackLayout>
