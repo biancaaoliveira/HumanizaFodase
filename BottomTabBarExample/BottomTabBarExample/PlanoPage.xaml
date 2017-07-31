@@ -12,9 +12,9 @@
                     <DataTemplate>
                         <ViewCell IsEnabled="False">
                             <StackLayout Orientation="Vertical" VerticalOptions="Center" Margin="5,0,5,0">
-                                <Label Text="{Binding titulo}" FontAttributes="Bold" ></Label>
+                                    <Label Text="{Binding titulo}" FontAttributes="Bold" FontSize="17" Margin="10"></Label>
                                 <Image Source="{Binding imagem}" ></Image>
-                                <Label Text="{Binding descricao}" FontSize="12" XAlign="Center" TextColor="Gray"></Label>
+                                <Label Text="{Binding descricao}" FontSize="14" XAlign="Center" TextColor="Gray"></Label>
 
                             </StackLayout>
                         </ViewCell>

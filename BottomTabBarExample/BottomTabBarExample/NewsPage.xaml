@@ -12,10 +12,10 @@
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell IsEnabled="False">
-                                <StackLayout Orientation="Vertical" VerticalOptions="Center" Margin="0,5,0,5">
-                                        <Label Text="{Binding titulo}" FontAttributes="Bold" Margin="10"></Label>
+                                <StackLayout Orientation="Vertical" VerticalOptions="Center" Margin="0,0,0,5">
+                                    <Label Text="{Binding titulo}" FontAttributes="Bold" Margin="10" FontSize="17"></Label>
                                     <Image Source="{Binding imagem}" ></Image>
-                                        <Label Text="{Binding descricao}" FontSize="12" XAlign="Center" Margin="10" TextColor="Gray"></Label>
+                                        <Label Text="{Binding descricao}" FontSize="14" XAlign="Center" Margin="10" TextColor="Gray"></Label>
                                     
                                 </StackLayout>
                             </ViewCell>

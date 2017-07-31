@@ -4,7 +4,7 @@
             
              x:Class="BottomTabBarExample.Plano6" BackgroundColor="#ECDFFD">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#ECDFFD" Margin="0,0,5,0">
+        <StackLayout BackgroundColor="#ECDFFD" Margin="10,5,10,0">
            <Label Text="Seu Plano de Parto" FontAttributes="Bold"  FontSize="Large"  ></Label>
             <Label Text="Estou ciente de que o parto pode tomar diferentes rumos. Abaixo estão minhas preferências em relação ao parto e nascimento do meu filho(a), caso tudo transcorra bem. Sempre que os planos não puderem ser seguidos, gostaria de ser previamente avisada e consultada a respeito das alternativas." FontSize="12" Margin="10,5,5,5" TextColor="Gray"></Label>
             <Image x:Name="imgTeste"></Image>
