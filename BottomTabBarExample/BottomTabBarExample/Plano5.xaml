@@ -4,7 +4,7 @@
              xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
              x:Class="BottomTabBarExample.Plano5"  BackgroundColor="#ECDFFD">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Margin="10,5,10,0">
             <Label Text="Caso de Cesárea" FontAttributes="Bold" FontSize="Large"></Label>
             <controls:CheckBox  x:Name="chk1" DefaultText="Desejo o início do trabalho de parto antes de se resolver pela cesárea."
                            HorizontalOptions="FillAndExpand"

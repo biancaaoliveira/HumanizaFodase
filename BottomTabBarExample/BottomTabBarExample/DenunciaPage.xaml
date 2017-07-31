@@ -7,7 +7,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text=" " FontSize="17" XAlign="Center"/>
-            <Label Text="Já sofreu violência obstétrica?" FontSize="17" XAlign="Center" Margin="10"/>
+            <Label Text="Já sofreu violência obstétrica?" FontSize="17" XAlign="Center" Margin="10" FontAttributes="Bold"/>
             <Label Text="Denuncie nos órgãos abaixo:" XAlign="Center" Margin="5"/>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
