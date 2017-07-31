@@ -18,7 +18,7 @@
                 <Label Text="Ou indique um profissional para nossa rede:" TextColor="Black"></Label>
                 <Entry x:Name="indicardoula" TextColor="Gray"></Entry>
 
-                <!--<Button Text="Indicar" BackgroundColor="#d5b7ee"></Button>-->
+                <Button Text="Indicar" BackgroundColor="#d5b7ee"></Button>
 
 
 

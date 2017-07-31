@@ -16,5 +16,9 @@ namespace BottomTabBarExample
         {
             InitializeComponent();
         }
+        private void GoToURL3(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri("https://drive.google.com/open?id=1_6854qpUWheX04TvxyzSbmYgggU&usp=sharing"));
+        }
     }
 }

@@ -7,7 +7,7 @@ using Xamarin.Forms;
 
 namespace BottomTabBarExample.Classes
 {
-    class Noticias
+    public class Noticias
     {
 
         private string Titulo;

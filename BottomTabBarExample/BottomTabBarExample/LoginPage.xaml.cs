@@ -6,16 +6,30 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using BottomTabBarExample.Classes;
+using System.Collections.Generic;
 
 namespace BottomTabBarExample
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
+        
+        public static Gravidas UsuarioAtual { get; set; }
+        public static List<Gravidas> gravidas;
+
         public LoginPage()
         {
 
             InitializeComponent();
+            if(PerfilPage.count == 0)
+            {
+            gravidas = new List<Gravidas>();
+            Gravidas gn = new Gravidas("Usuário Teste", "teste@email.com", "123");
+            gravidas.Add(gn);
+            UsuarioAtual = new Gravidas();
+            }
+            
         }
 
         protected override void OnAppearing()
@@ -26,16 +40,23 @@ namespace BottomTabBarExample
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            if (Email.Text == "teste@email.com" && Senha.Text == "123")
+            foreach(Gravidas g in gravidas)
             {
-                Navigation.InsertPageBefore(new MainPage(), this);
-                await Navigation.PopAsync();
-            }
-            else
-            {
-                await DisplayAlert("Informação", "email ou senha inválidos", "fechar");
+                if((_Email.Text == g.email && _Senha.Text == g.senha))
+                {
+                    UsuarioAtual.nome = g.nome;
+                    UsuarioAtual.email = g.email;
+                    UsuarioAtual.senha = g.senha;
+                    Navigation.InsertPageBefore(new MainPage(), this);
+                    await Navigation.PopAsync();
+                }
+                else
+                {
+                    await DisplayAlert("Aviso", "email ou senha inválidos", "fechar");
 
+                }
             }
+            
 
         }
         private async void cadastrar_clicked(object sender, EventArgs e)
