@@ -7,21 +7,13 @@
     <ContentPage.Content>
         <StackLayout  x:Name="layout" Margin="5,5,5,5">
             <StackLayout >
-            <ListView x:Name="lvPlano" HasUnevenRows="True">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell IsEnabled="False">
-                            <StackLayout Orientation="Vertical" VerticalOptions="Center" Margin="5,0,5,0">
-                                    <Label Text="{Binding titulo}" FontAttributes="Bold" FontSize="17" Margin="10"></Label>
-                                <Image Source="{Binding imagem}" ></Image>
-                                <Label Text="{Binding descricao}" FontSize="14" XAlign="Center" TextColor="Gray"></Label>
+                <StackLayout Orientation="Vertical" VerticalOptions="Center" Margin="5,0,5,0">
+                    <Label Text="Plano de Parto" FontAttributes="Bold" FontSize="17" Margin="10"></Label>
+                    <Image Source="plano_de_parto.png" ></Image>
+                    <Label Text="O plano de Parto é uma carta ou uma lista onde a gestante descreve tudo que gostaria ou não gostaria que acontecesse nas etapas do parto, desde o trabalho de parto até os cuidados com o bebê após o nascimento. Atentamos que é importante um diálogo prévio com a equipe que irá realizar o seu parto acerca das suas preferências. Ao clicar em 'fazer plano de parto' você terá acesso à alguns itens para ajudar a fazer o seu plano de parto e poderá enviar por email para quem desejar." FontSize="13" XAlign="Center" TextColor="Gray"></Label>
 
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackLayout>
+                </StackLayout>
+            </StackLayout>
         
    
             <Button Grid.Column="0" Text="Faça seu Plano de Parto" Clicked="Plano1_Clicked"  BackgroundColor="#d5b7ee" ></Button>

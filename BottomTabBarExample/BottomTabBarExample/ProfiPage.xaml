@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             Title="Profi"
+             Title="Profissionais"
               Icon="denuncie2.png"
              
              x:Class="BottomTabBarExample.ProfiPage">
@@ -13,11 +13,11 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button Grid.Column="0" Text="Doulas" Clicked="Doulas_Clicked"  BackgroundColor="#DEC8FB" ></Button>
+                <Button Grid.Column="0" Text="Doulas" Clicked="Doulas_Clicked"  BackgroundColor="#DEC8FB"></Button>
                 <Button Grid.Column="1" Text="Profissionais" Clicked="Profissionais_Clicked"  BackgroundColor="#DEC8FB"></Button>
             </Grid>
-            <StackLayout Margin="8">
-                <ListView x:Name="lvProfissionais" IsVisible="False" HasUnevenRows="True">
+            <StackLayout Margin="8" VerticalOptions="FillAndExpand">
+                <ListView x:Name="lvProfissionais" IsVisible="False" HasUnevenRows="True" SeparatorColor="Black">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell IsEnabled="False">
@@ -32,7 +32,7 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-                <ListView x:Name="lvDoulas" IsVisible="True" HasUnevenRows="True">
+                <ListView x:Name="lvDoulas" IsVisible="True" HasUnevenRows="True" SeparatorColor="Black">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell IsEnabled="False">

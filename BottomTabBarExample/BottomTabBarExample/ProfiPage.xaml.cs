@@ -25,6 +25,7 @@ namespace BottomTabBarExample
         {
             lvDoulas.IsVisible = true;
             lvProfissionais.IsVisible = false;
+            
         }
 
         private void Profissionais_Clicked(object sender, EventArgs e)
@@ -57,5 +58,6 @@ namespace BottomTabBarExample
 
 
         }
+
     }
 }
