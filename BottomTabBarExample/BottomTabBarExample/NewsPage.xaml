@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title="Infos"
-              
+             Icon="ic_receipt_white_24dp.png"  
              x:Class="BottomTabBarExample.NewsPage">
     <ContentPage.Content>
         <StackLayout BackgroundColor="#ECDFFD">

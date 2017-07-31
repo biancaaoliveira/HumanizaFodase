@@ -12,20 +12,13 @@ namespace BottomTabBarExample
     {
         public MainPage()
         {
-           
             Title = "HUMANIZA";
 
             Children.Add(new NewsPage());
-
             Children.Add(new MapaPage());
-
             Children.Add(new ProfiPage());
-
             Children.Add(new PlanoPage());
-
             Children.Add(new DenunciaPage());
-
-
 
             NavigationPage.SetHasNavigationBar(this, true);
 

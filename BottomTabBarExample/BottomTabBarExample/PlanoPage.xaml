@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-              Title="Plano de Parto"
+              Title="Plano de Parto" 
+             Icon="ic_pregnant_woman_white_24dp"  
              x:Class="BottomTabBarExample.PlanoPage" BackgroundColor="#ECDFFD">
     <ContentPage.Content>
         <StackLayout  x:Name="layout" Margin="5,5,5,5">

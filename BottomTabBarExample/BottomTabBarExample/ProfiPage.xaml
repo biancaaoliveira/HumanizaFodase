@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title="Profissionais"
+              Icon="ic_supervisor_account_white_24dp.png" 
              x:Class="BottomTabBarExample.ProfiPage">
+    
 
     <ContentPage.Content>
         <StackLayout BackgroundColor="#ECDFFD">
