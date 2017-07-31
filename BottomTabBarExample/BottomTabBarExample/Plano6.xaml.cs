@@ -89,7 +89,7 @@ namespace BottomTabBarExample
             }
             else
             {
-                DisplayAlert("Alerta", "Para enviar o Plano de Parto por email é necessário um aplicativo de email!", "OK");
+                DisplayAlert("Aviso", "Para enviar o Plano de Parto por email é necessário um aplicativo de email!", "fechar");
             }
 
         }

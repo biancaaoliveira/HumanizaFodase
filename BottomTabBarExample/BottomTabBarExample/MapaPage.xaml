@@ -5,9 +5,9 @@
              Icon="denuncie2.png"
              x:Class="BottomTabBarExample.MapaPage" BackgroundColor="#ECDFFD">
     <ContentPage.Content>
-        <StackLayout Margin="10,10,10,10">
+        <StackLayout Margin="10,30,10,10">
             <Label Text="Mapa com a localização e informações de grupos de apoio ao parto humanizado e hospitais com suporte a tal tipo de parto. Grupos de apoio estão em roxo e hospitais em azul."  FontSize="12" XAlign="Center" TextColor="Gray"></Label>
-            <Button Grid.Column="0" Text="Ir para o Mapa" Clicked="GoToURL3"  BackgroundColor="#d5b7ee" ></Button>
+            <Button Grid.Column="0" Image="mapa.png" Clicked="GoToURL3"  BackgroundColor="#d5b7ee" ></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

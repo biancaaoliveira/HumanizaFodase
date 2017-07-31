@@ -14,20 +14,20 @@ namespace BottomTabBarExample
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
-        
-        public static Gravidas UsuarioAtual { get; set; }
+
+        public static Gravidas UsuarioAtual;
         public static List<Gravidas> gravidas;
 
         public LoginPage()
         {
 
             InitializeComponent();
+
             if(PerfilPage.count == 0)
             {
-            gravidas = new List<Gravidas>();
-            Gravidas gn = new Gravidas("Usuário Teste", "teste@email.com", "123");
-            gravidas.Add(gn);
-            UsuarioAtual = new Gravidas();
+                gravidas = new List<Gravidas>();
+                gravidas.Add(new Gravidas("Usuário Teste", "teste@email.com", "123"));
+                UsuarioAtual = new Gravidas();
             }
             
         }
