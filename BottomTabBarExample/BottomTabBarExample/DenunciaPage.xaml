@@ -11,12 +11,12 @@
             <Label Text="Denuncie nos órgãos abaixo:" XAlign="Center" Margin="5"/>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Button Image="Denuncia1.png" Clicked="GoToURL1" HorizontalOptions="Start" Margin="10"/>
-                <Button Image="Denuncia2.png" Clicked="GoToURL2" HorizontalOptions="End" Margin="10"/>
+                <Button Image="Denuncia1.png" Clicked="GoToURL1" HorizontalOptions="Start" Margin="10" BackgroundColor="#d5b7ee"/>
+                <Button Image="Denuncia2.png" Clicked="GoToURL2" HorizontalOptions="End" Margin="10" BackgroundColor="#d5b7ee"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Button Image="Denuncia3.png" Clicked="GoToURL3" HorizontalOptions="Start" Margin="10"/>
-                <Button Image="Denuncia4.png" Clicked="GoToURL4" HorizontalOptions="End" Margin="10"/>
+                <Button Image="Denuncia3.png" Clicked="GoToURL3" HorizontalOptions="Start" Margin="10" BackgroundColor="#d5b7ee"/>
+                <Button Image="Denuncia4.png" Clicked="GoToURL4" HorizontalOptions="End" Margin="10" BackgroundColor="#d5b7ee"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

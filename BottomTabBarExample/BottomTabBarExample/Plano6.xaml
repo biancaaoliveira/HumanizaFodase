@@ -6,17 +6,17 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="#ECDFFD" Margin="10,5,10,0">
            <Label Text="Seu Plano de Parto" FontAttributes="Bold"  FontSize="Large"  ></Label>
-            <Label Text="Estou ciente de que o parto pode tomar diferentes rumos. Abaixo estão minhas preferências em relação ao parto e nascimento do meu filho(a), caso tudo transcorra bem. Sempre que os planos não puderem ser seguidos, gostaria de ser previamente avisada e consultada a respeito das alternativas." FontSize="12" Margin="10,5,5,5" TextColor="Gray"></Label>
+            <Label Text="Estou ciente de que o parto pode tomar diferentes rumos. Abaixo estão minhas preferências em relação ao parto e nascimento do meu filho(a), caso tudo transcorra bem. Sempre que os planos não puderem ser seguidos, gostaria de ser previamente avisada e consultada a respeito das alternativas." FontSize="13" Margin="10,5,5,5" TextColor="Gray"></Label>
             <Image x:Name="imgTeste"></Image>
-              <StackLayout Margin="0,50,0,0">
+              <StackLayout Margin="0,15,0,0">
                   <ListView x:Name="lvTextos" HasUnevenRows="True">
                       <ListView.ItemTemplate>
                           <DataTemplate>
                               <ViewCell IsEnabled="False">
                                   <StackLayout Orientation="Vertical" VerticalOptions="Center"  >
-                                      <Label Text="{Binding titulo}" FontAttributes="Bold"  Margin="10,5,5,5"></Label>
+                                      <Label Text="{Binding titulo}" FontAttributes="Bold"  Margin="10,5,5,5" FontSize="15"></Label>
 
-                                      <Label Text="{Binding textos}" FontSize="12" Margin="10,5,5,5" TextColor="Gray"></Label>
+                                      <Label Text="{Binding textos}" FontSize="13" Margin="10,5,5,5" TextColor="Gray"></Label>
 
                                   </StackLayout>
                               </ViewCell>

@@ -4,11 +4,11 @@
              x:Class="BottomTabBarExample.PerfilPage">
         
     <ContentPage.Content>
-        <StackLayout Margin="20" VerticalOptions="Center">
-            <Image HeightRequest="200" Source="gestante.png"></Image>
+        <StackLayout Margin="5" VerticalOptions="Center">
+            <Image HeightRequest="200" Source="gestante.png" Margin="5"></Image>
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                
-                <StackLayout HorizontalOptions="FillAndExpand">
+                <StackLayout HorizontalOptions="FillAndExpand" Margin="5">
                     <Label Text="Nome" TextColor="Black"></Label>
                     <Label Text="{Binding  nome}" TextColor="Gray"></Label>
                     <Label TextColor="Black">Email:</Label>
